@@ -7,6 +7,6 @@ main() {
   person1.display();
   var person2=Person(102, "Arya");
   person2.display();
-  var person3=Person.second(103, "Anju", "Kochi");
+  var person3=Person.second("Kochi");
   person3.display();
 }

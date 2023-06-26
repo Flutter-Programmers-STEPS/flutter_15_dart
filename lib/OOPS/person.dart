@@ -1,10 +1,12 @@
 
+
 import 'package:flutter_15/Examples-ClassMethodsORFunctions/Example3.dart';
 
 class Person{
   int? id;
   String? name;
   String? address;
+  int? phn;
   //constructor
 // Person(int id, String name){
 //   this.id=id;
@@ -26,7 +28,7 @@ class Person{
 //   this.address=address;
 // }
 
-Person.second(this.id,this.name,this.address);
+Person.second(String address):this(101,"Anjali");
 
 display()
 {
