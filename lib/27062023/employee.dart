@@ -24,4 +24,8 @@ class Employee{
     _empName = value;
   }
 
+  @override
+  String toString() {
+    return 'Employee{_id: $_id, _empName: $_empName, _department: $_department}';
+  }
 }

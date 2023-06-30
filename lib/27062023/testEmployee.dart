@@ -10,5 +10,6 @@ main() {
   print(emp1.department);
   print(emp1.empName);
  // print(emp1._id); Not possible becouse fields are private
+  print(emp1);
 
 }
