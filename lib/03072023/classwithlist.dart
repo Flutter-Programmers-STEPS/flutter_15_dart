@@ -1,7 +1,6 @@
 
 class Student{
-  var id;
-  var name, course;
+  var id, name, course;
 
   Student.initialize(this.id, this.name, this.course);
 
