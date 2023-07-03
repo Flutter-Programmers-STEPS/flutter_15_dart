@@ -1,27 +1,18 @@
-//import 'package:intl/intl.dart';
-//This package is used to get Time  & Date in Flutter
-
 import 'package:intl/intl.dart';
 
-main() {
-
-  print(DateTime.now());
-
-
-  var dateTime=DateTime.now();
-
-  print(dateTime.day);
-  
-  print(dateTime.year);
-  print(dateTime.month);
-  print("${dateTime.day}/${dateTime.month}/${dateTime.year}" );
-
-  print("${dateTime.hour}:${dateTime.minute}:${dateTime.second}" );
-print(dateTime);// to String is already overriden
-
-  String date=DateFormat.yMd().format(dateTime);
-  print(date);
-
-
-
+main(){
+  var datetime=DateTime.now();
+  int currentYear=datetime.year;
+  String timeFormat=DateFormat.yMd().format(datetime);
+  print(timeFormat);
+  var currDt = DateTime.now();
+  print(currDt.year);
+  print(currDt.weekday);
+  print(currDt.month);
+  print(currDt.day);
+  print(currDt.hour);
+  print(currDt.minute);
+  print(currDt.second);
+  String time = DateFormat.Hms().format(datetime);
+  print(time);
 }
