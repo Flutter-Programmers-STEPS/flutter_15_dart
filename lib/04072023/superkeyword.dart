@@ -8,7 +8,7 @@ class School extends District{
   int? sid;
   String? sname;
 
-  School(this.sid, this.sname) : super(0, 0, 'EKM'); //School(super.dId, super.sid, super.dName);
+  School(this.sid, this.sname); //School(super.dId, super.sid, super.dName);
 
   @override
   pinCode() {
@@ -31,5 +31,5 @@ class District{
     print("View District Pin Code");
   }
 
-  District(this.dId, this.sid, this.dName);
+ // District(this.dId, this.sid, this.dName);
 }
